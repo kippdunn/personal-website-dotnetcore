@@ -35,7 +35,7 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '$(azureSubscription)'
+    azureSubscription: $(azureSub)
     appType: 'webApp'
     appName: 'kipp-website'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
